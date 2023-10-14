@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;padding: 0;
+    width: 100%;
+    background-image: url('./final.jpg');
+    background-size: cover;background-position: center;
+}
+header {
+    background:linear-gradient(rgba(0, 0, 0, 0.300) ,rgba(0, 0, 0, 0.300)), url(./wallpaperflare.com_wallpaper\ \(5\).jpg);
+    background-repeat: no-repeat;background-size: cover;color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+}
+#searchInput {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+#searchButton {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 7px;
+    border-radius: 10px;
+}
+#searchButton:hover {
+    background-color:crimson;
+}
+#imageResults{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+}
+#main-div{
+    width: 320px; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+#main-div img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px; width: 100%;
+}
+#main-div p{
+    text-transform: capitalize;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 290px;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 1rem;
+}
+.down-like{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 1rem;
+   border-radius: 20px;
+}
+.down-like h4{  
+    border-radius: 50px;
+    background-color:rgb(228, 91, 159);
+    padding: .3rem .5rem;
+    color: white;
+    border-radius: 5px;
+}
+.down-like h4 i {
+    font-size: 20px;
+}
+.down-like a{
+    text-decoration: none;
+    background-color: rgba(9, 114, 9, 0.845);
+    padding: .4rem .7rem;
+    color: white;
+    border-radius: 5px;
+}
+.inside-div
+{
+    border-top-right-radius: 0px;border-top-left-radius: 0px;
+}
+.footer-path {
+    background-color: #333;
+    margin-top: 2rem;
+}
+.footer-path p {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+.footer-path{
+padding: 1.5rem;
+display: flex;
+justify-content: center;
+}
+.footer-path a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: -4px;
+    margin-right: 30px ;
+    color:#fff;
+}
+.footer-path a i{
+    color: #fff;
+}
+.footer-path i{
+    font-size: 25px;
+    margin-top: -3px;margin-right: 10px;margin-left: 3px;
+   color:red;
+}
+#showmorebtn{
+    display: none;
+    margin: 20px auto;
+    background-color: rgb(93, 49, 170);color: white;
+    padding: .5rem 1rem;border: none;
+    border-radius: 5px;
+}
+#fp-results{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+#fp-results #results{
+    width: 420px;
+    height: 410px;
+    margin: 40px auto;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    
+    font-size: 15px;
+    line-height: 1.4;
+}
+#fp-results #results img{
+ width: 100%;
+ height: 83%;
+ border-radius: 15px;
+}
+#results p{
+    padding: .5rem;
+}
