@@ -5,10 +5,10 @@ let footerdiv=document.getElementById("footer-path")
 let footer=document.querySelector('footer')
 let showmore=document.getElementById("showmorebtn")
 let page=1;
-
     async function searchImages()
     { 
-       let searchinput=document.getElementById("searchInput").value;
+
+        let searchinput=document.getElementById("searchInput").value;
         let data=await fetch(`https://api.unsplash.com/search/photos?page=${page}&query=${searchinput}&client_id=wT5xCSl56MN9NkmhHuUtHb-QvPcSlUaS31wy31E5tfs`)
          data=await data.json();
         console.log(data);
@@ -45,6 +45,9 @@ searchbox.addEventListener('submit',(event)=>{
     event.preventDefault();
     page=1;
     searchImages()
+    imageresults.innerHTML=""
 })
 
-showmore.addEventListener('click',searchImages)
+showmore.addEventListener('click',()=>{
+    searchImages()
+})
